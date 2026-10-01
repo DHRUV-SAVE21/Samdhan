@@ -1,0 +1,25 @@
+{
+  "name": "bloodgrid-samadhan",
+  "version": "1.0.0",
+  "description": "BloodGrid — Where Every Drop Finds Its Way (MergeInfinity | SAMADHAN × UPAY NGO)",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "concurrently -n web,api -c red,green \"npm run dev:web\" \"npm run dev:api\"",
+    "dev:web": "npm run dev --prefix apps/web",
+    "dev:api": "uvicorn app.main:app --reload --app-dir apps/api",
+    "build": "npm run build --prefix apps/web",
+    "lint": "npm run lint --prefix apps/web",
+    "install:all": "npm install && npm install --prefix apps/web"
+  },
+  "keywords": [
+    "bloodgrid",
+    "samadhan",
+    "upay-ngo",
+    "mergeinfinity"
+  ],
+  "author": "Team MergeInfinity (Dhruv Save, Megh Bari, Samarth Bhirud)",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}

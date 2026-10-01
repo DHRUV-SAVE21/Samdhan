@@ -1,0 +1,5 @@
+from app.schemas.operations import Camera, Incident, RiskLevel, Zone
+
+CAMERAS = [Camera(id="cam-07", name="North Gate", location="Gate 02 - North concourse"), Camera(id="cam-12", name="Main Arena", location="Central arena"), Camera(id="cam-04", name="East Exit", location="Exit 04 - East wing")]
+ZONES = [Zone(id="N-02", name="North Gate", camera_id="cam-07", zone_type="bottleneck", capacity=420, expected_direction="inbound", occupancy=342, risk=RiskLevel.CRITICAL), Zone(id="A-01", name="Main Arena", camera_id="cam-12", zone_type="gathering", capacity=500, expected_direction="bidirectional", occupancy=286, risk=RiskLevel.WATCH), Zone(id="E-04", name="East Exit", camera_id="cam-04", zone_type="exit", capacity=240, expected_direction="outbound", occupancy=94, risk=RiskLevel.SAFE)]
+INCIDENTS = [Incident(id="inc-001", title="Counter-flow detected", zone_id="N-02", severity=RiskLevel.CRITICAL, detail="18 people moving against the expected direction"), Incident(id="inc-002", title="Density threshold exceeded", zone_id="A-01", severity=RiskLevel.CRITICAL, detail="Density reached 4.6 people/m2")]

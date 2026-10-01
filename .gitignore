@@ -1,0 +1,45 @@
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+dist/
+coverage/
+.env
+.env.*
+!.env.example
+.DS_Store
+.vercel/
+
+# Documents and local notes
+*.pdf
+*.txt
+!apps/api/requirements.txt
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+.env
+*.log
+.pytest_cache/
+.mypy_cache/
+
+# Computer vision artifacts
+models/*.pt
+models/*.onnx
+data/raw/
+data/processed/
+
+# Local scratch files
+tmp/
+
+# Supabase
+supabase/functions/*/deno.log
+
+# IDE
+.vscode/
+.idea/
+

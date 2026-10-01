@@ -1,0 +1,18 @@
+{
+  "name": "BloodGrid — Where Every Drop Finds Its Way",
+  "short_name": "BloodGrid",
+  "description": "Community-centric blood donor engagement & IoT cold-chain fulfilment platform by MergeInfinity (Samadhan × UPAY NGO).",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#081426",
+  "theme_color": "#e61e2a",
+  "icons": [
+    {
+      "src": "/bloodgrid-logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}
