@@ -1,23 +1,22 @@
 {
-  "name": "bloodgrid-samadhan",
+  "name": "bloodgrid-network",
   "version": "1.0.0",
-  "description": "BloodGrid — Where Every Drop Finds Its Way (MergeInfinity | SAMADHAN × UPAY NGO)",
+  "description": "BloodGrid — Emergency Blood Requisition, Donor Registry & Cold-Chain Network",
   "scripts": {
     "start": "npm run dev",
     "dev": "concurrently -n web,api -c red,green \"npm run dev:web\" \"npm run dev:api\"",
     "dev:web": "npm run dev --prefix apps/web",
     "dev:api": "uvicorn app.main:app --reload --app-dir apps/api",
-    "build": "npm run build --prefix apps/web",
+    "build": "npm install --prefix apps/web && npm run build --prefix apps/web",
     "lint": "npm run lint --prefix apps/web",
     "install:all": "npm install && npm install --prefix apps/web"
   },
   "keywords": [
     "bloodgrid",
-    "samadhan",
-    "upay-ngo",
-    "mergeinfinity"
+    "blood-donation",
+    "cold-chain"
   ],
-  "author": "Team MergeInfinity (Dhruv Save, Megh Bari, Samarth Bhirud)",
+  "author": "Team MergeInfinity",
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^9.1.0"
